@@ -5,10 +5,9 @@
 project = "ciberedev.py"
 copyright = "2021, cibere"
 author = "cibere"
-import ciberedev
 
-release = ciberedev.__version__
-version = ciberedev.__version__
+release = "0.1"
+version = release
 
 # -- General configuration
 
