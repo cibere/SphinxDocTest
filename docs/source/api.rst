@@ -15,17 +15,17 @@ Client
 Errors
 --------
 
-.. autoclass:: ciberedev.errors.APIOffline
+.. autoexception:: ciberedev.errors.APIOffline
     :members:
 
-.. autoclass:: ciberedev.errors.ClientNotStarted
+.. autoexception:: ciberedev.errors.ClientNotStarted
     :members:
    
-.. autoclass:: ciberedev.errors.ClientAlreadyStarted
+.. autoexception:: ciberedev.errors.ClientAlreadyStarted
     :members:
 
-.. autoclass:: ciberedev.errors.InvalidURL
+.. autoexception:: ciberedev.errors.InvalidURL
     :members:
 
-.. autoclass:: ciberedev.errors.UnableToConnect
+.. autoexception:: ciberedev.errors.UnableToConnect
     :members:
