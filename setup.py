@@ -2,8 +2,8 @@ import setuptools
 
 LONG_DESCRIPTION = "test"
 
-with open("docs/source/requirements.txt", "r") as f:
-    REQUIREMENTS = f.read().splitlines()
+"""with open("docs/source/requirements.txt", "r") as f:
+    REQUIREMENTS = f.read().splitlines()"""
 
 setuptools.setup(
     name="ciberedev.py",
@@ -17,7 +17,7 @@ setuptools.setup(
     },
     version="0.1.10124",
     python_requires=">=3.8",
-    install_requires=REQUIREMENTS,
+    install_requires=["aiohttp"],
     packages=["ciberedev"],
     description="its a desc",
     long_description=LONG_DESCRIPTION,
