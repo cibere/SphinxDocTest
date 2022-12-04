@@ -1,6 +1,10 @@
 API
 ===
 
-.. attributetable:: Client
+.. autosummary::
+   :toctree: generated
+
+   ciberedev
+
 .. autoclass:: ciberedev.Client
     :members:
