@@ -5,7 +5,7 @@ import ciberedev
 with open("README.md", "r") as f:
     LONG_DESCRIPTION = f.read()
 
-with open("requirements.txt", "r") as f:
+with open("docs/source/requirements.txt", "r") as f:
     REQUIREMENTS = f.read().splitlines()
 
 setuptools.setup(
