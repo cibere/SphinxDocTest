@@ -1,7 +1,6 @@
 import setuptools
 
-with open("README.md", "r") as f:
-    LONG_DESCRIPTION = f.read()
+LONG_DESCRIPTION = "test"
 
 with open("docs/source/requirements.txt", "r") as f:
     REQUIREMENTS = f.read().splitlines()
