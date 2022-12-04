@@ -20,46 +20,45 @@ class APIError(BaseError):
 
 
 class APIOffline(APIError):
+    """Used if the client could not connect to the api
+
+    This is raised when the client can not connect to the api
+    It is not recommended to raise this yourself
+
+    Parameters
+    ----------
+    endpoint: `str`
+        the endpoint the client is trying to make a request to
+
+    Attributes
+    ----------
+    endpoint: `str`
+        the endpoint the client is trying to make a request to
+    """
+
     def __init__(self, endpoint: str):
-        """Creates an APIOffline error instance.
-
-        This is raised when the client can not connect to the api
-        It is not recommended to raise this yourself
-
-        Parameters
-        ----------
-        endpoint: `str`
-            the endpoint the client is trying to make a request to
-
-        Attributes
-        ----------
-        endpoint: `str`
-            the endpoint the client is trying to make a request to
-        """
-
         self.endpoint = endpoint
         super().__init__(f"API is down. Aborting API request to '{endpoint}'")
 
 
 class ClientNotStarted(BaseError):
+    """Used if the client has no been started
+
+    It is not recommended to raise this yourself
+    """
+
     def __init__(self):
-        """Creates a ClientNotStarted error instance.
-
-        It is not recommended to raise this yourself
-        """
-
         super().__init__(
             "Client has not been started. You can start it with 'client.run' or 'client.start'"
         )
 
 
 class ClientAlreadyStarted(BaseError):
+    """Used when the client has already been started
+    It is not recommended to raise this yourself
+    """
+
     def __init__(self):
-        """Creates a ClientAlreadyStarted error instance.
-
-        It is not recommended to raise this yourself
-        """
-
         super().__init__("Client has already been started")
 
 
